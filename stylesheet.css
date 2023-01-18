@@ -1,0 +1,58 @@
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+ul{
+    list-style: none;
+    width: 35%;
+}
+ul li{
+    width: 100%;
+    margin: 4px 0;
+    border-radius: 4px;
+    background: linear-gradient(-90deg,#233A4E,#9C6DB0);
+    transition: all ease-out 0.3ms;
+}
+
+ul li a{
+    display: block;
+    padding: 8px;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: normal;
+    white-space: nowrap;
+
+}
+
+
+ul li:hover{
+    transform: scale(1.2);
+    transform-origin: center;
+    box-shadow: 2px 2px 5px #233A4E ;
+   
+}
+
+ul li a:hover{
+    text-align: right;
+    animation: outro 3s cubic-bezier(0.16, 1, 0.3, 1) normal forwards;
+}
+
+@keyframes outro {
+    0% {
+        opacity: 1;
+        letter-spacing: 0px;
+    }
+   100%{
+        opacity: 1;
+        letter-spacing: 10px;
+        background-color: #233A4E;
+     
+    }
+}
